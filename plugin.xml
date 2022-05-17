@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="CDRH Dashboards">
+
+  <webapp>
+
+    <includes>
+        
+      <!-- COVID Dashboards -->
+      <script src="app/dashboards/covid/CovidDashboard.js" type="text/javascript"></script>
+      <script src="app/dashboards/covid/ICUMap.js" type="text/javascript"></script>
+      <script src="app/dashboards/covid/PPEDemand.js" type="text/javascript"></script>
+
+      <!-- Dashboards for Medical Devices -->
+      <script src="app/dashboards/cdrh/EUAMap.js" type="text/javascript"></script>
+      <script src="app/dashboards/cdrh/SupplyChain.js" type="text/javascript"></script>
+      <script src="app/dashboards/cdrh/ProductPurchases.js" type="text/javascript"></script>
+      <script src="app/dashboards/cdrh/Premier.js" type="text/javascript"></script>
+        
+        
+      <link href="style/cdrh-dashboards.css" type="text/css" rel="stylesheet" />
+        
+    </includes>
+
+    
+    <dashboards>
+        
+      <dashboard name="COVID Dashboard" class="bluewave.dashboards.covid.CovidDashboard"/>
+      <dashboard name="ICU Map" class="bluewave.dashboards.covid.ICUMap"/>
+      <dashboard name="PPE Demand" class="bluewave.dashboards.covid.PPEDemand"/>
+      
+      <dashboard name="EUA Map" class="bluewave.dashboards.cdrh.EUAMap"/>
+      <dashboard name="Supply Chain Sankey" class="bluewave.dashboards.cdrh.SupplyChain"/>
+      <dashboard name="Medical Device Imports" class="bluewave.dashboards.cdrh.ProductPurchases"/>
+      <dashboard name="Premier Dashboard" class="bluewave.dashboards.cdrh.Premier"/>
+      
+    </dashboards>
+    
+  </webapp>
+
+</plugin>
